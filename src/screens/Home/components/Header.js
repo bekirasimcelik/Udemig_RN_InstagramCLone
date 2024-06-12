@@ -31,10 +31,10 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingHorizontal: '15',
+    paddingHorizontal: 15,
     height: 44,
     alignItems: 'center',
-    paddingBottom: '4',
+    paddingBottom: 4,
   },
   actions: {
     flexDirection: 'row',
