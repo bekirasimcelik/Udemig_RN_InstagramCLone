@@ -86,6 +86,33 @@ function Profile({size}) {
   );
 }
 
+function Plus({size}) {
+  return (
+    <Image
+      style={{width: size, height: size}}
+      source={require('./../assets/plus.png')}
+    />
+  );
+}
+
+function Heart({size}) {
+  return (
+    <Image
+      style={{width: size, height: size}}
+      source={require('./../assets/heart.png')}
+    />
+  );
+}
+
+function Messenger({size}) {
+  return (
+    <Image
+      style={{width: size, height: size}}
+      source={require('./../assets/messenger.png')}
+    />
+  );
+}
+
 export {
   Logo,
   Home,
@@ -97,4 +124,7 @@ export {
   Shop,
   ShopField,
   Profile,
+  Plus,
+  Heart,
+  Messenger,
 };

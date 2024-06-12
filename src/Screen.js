@@ -16,7 +16,7 @@ import {
   Shop,
   ShopField,
 } from './Icons';
-import {StyleSheet} from 'react-native';
+import {Image, StyleSheet} from 'react-native';
 
 const Tab = createBottomTabNavigator();
 
@@ -61,8 +61,15 @@ export default function Screen() {
       />
       <Tab.Screen
         options={{
-          tabBarIcon: ({focused}) =>
-            focused ? <Profile size={30} /> : <Profile size={30} />,
+          tabBarIcon: ({focused}) => (
+            <Image
+              style={[
+                styles.avatar,
+                {borderColor: focused ? '#000' : 'transparent'},
+              ]}
+              source={require('./../assets/profile.png')}
+            />
+          ),
         }}
         name="profile"
         component={ProfileScreen}
@@ -75,5 +82,7 @@ const styles = StyleSheet.create({
   avatar: {
     width: 30,
     height: 30,
+    borderWidth: 1,
+    borderRadius: 25,
   },
 });
