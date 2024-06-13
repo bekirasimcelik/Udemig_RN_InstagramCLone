@@ -121,6 +121,32 @@ function Dots() {
     />
   );
 }
+function Bookmark() {
+  return (
+    <Image
+      style={{width: 24, height: 24}}
+      source={require('./../assets/bookmark.png')}
+    />
+  );
+}
+
+function Comment() {
+  return (
+    <Image
+      style={{width: 24, height: 24}}
+      source={require('./../assets/comment.png')}
+    />
+  );
+}
+
+function Share() {
+  return (
+    <Image
+      style={{width: 24, height: 24}}
+      source={require('./../assets/share.png')}
+    />
+  );
+}
 
 export {
   Logo,
@@ -137,4 +163,7 @@ export {
   Heart,
   Messenger,
   Dots,
+  Bookmark,
+  Comment,
+  Share,
 };
