@@ -113,6 +113,15 @@ function Messenger({size}) {
   );
 }
 
+function Dots() {
+  return (
+    <Image
+      style={{width: 15, height: 3}}
+      source={require('./../assets/more.png')}
+    />
+  );
+}
+
 export {
   Logo,
   Home,
@@ -127,4 +136,5 @@ export {
   Plus,
   Heart,
   Messenger,
+  Dots,
 };

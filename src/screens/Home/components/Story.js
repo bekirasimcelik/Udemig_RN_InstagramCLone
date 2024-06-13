@@ -14,7 +14,6 @@ export default function Story({story}) {
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   story: {
     width: 67,
@@ -33,7 +32,7 @@ const styles = StyleSheet.create({
   },
   avatar: {
     width: 60,
-    height: 80,
+    height: 60,
     borderRadius: 60,
   },
 });

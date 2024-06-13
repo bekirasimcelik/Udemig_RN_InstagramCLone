@@ -8,7 +8,6 @@ import ProfileScreen from './screens/Profile';
 import {
   Home,
   HomeField,
-  Profile,
   Reel,
   ReelField,
   Search,
