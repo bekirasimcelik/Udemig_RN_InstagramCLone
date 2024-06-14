@@ -148,6 +148,24 @@ function Share() {
   );
 }
 
+function DropDown() {
+  return (
+    <Image
+      style={{width: 24, height: 24}}
+      source={require('./../assets/dropdown.png')}
+    />
+  );
+}
+
+function BurgerMenu() {
+  return (
+    <Image
+      style={{width: 25, height: 25}}
+      source={require('./../assets/burger.png')}
+    />
+  );
+}
+
 export {
   Logo,
   Home,
@@ -166,4 +184,6 @@ export {
   Bookmark,
   Comment,
   Share,
+  DropDown,
+  BurgerMenu,
 };
