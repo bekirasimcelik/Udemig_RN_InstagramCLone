@@ -166,6 +166,15 @@ function BurgerMenu() {
   );
 }
 
+function QrCamera() {
+  return (
+    <Image
+      style={{width: 25, height: 25}}
+      source={require('./../assets/qrCamera.png')}
+    />
+  );
+}
+
 export {
   Logo,
   Home,
@@ -186,4 +195,5 @@ export {
   Share,
   DropDown,
   BurgerMenu,
+  QrCamera,
 };
