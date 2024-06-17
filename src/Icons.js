@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image} from 'react-native';
+import {Image, Touchable, TouchableOpacity} from 'react-native';
 
 function Logo() {
   return <Image source={require('./../assets/logo.png')} />;
@@ -168,10 +168,12 @@ function BurgerMenu() {
 
 function QrCamera() {
   return (
-    <Image
-      style={{width: 25, height: 25}}
-      source={require('./../assets/qrCamera.png')}
-    />
+    <TouchableOpacity activeOpacity={0.6}>
+      <Image
+        style={{width: 25, height: 25}}
+        source={require('./../assets/qrCamera.png')}
+      />
+    </TouchableOpacity>
   );
 }
 
