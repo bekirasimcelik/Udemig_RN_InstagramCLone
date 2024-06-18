@@ -3,7 +3,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import HomeScreen from './screens/Home';
 import SearchScreen from './screens/Search/SearchScreen';
 import ReelScreen from './screens/Reel';
-import ShopScreen from './screens/Shop';
+import LikeScreen from './screens/Likes/Likes';
 import ProfileScreen from './screens/Profile/Profile';
 import {
   Home,
@@ -12,8 +12,8 @@ import {
   ReelField,
   Search,
   SearchField,
-  Shop,
-  ShopField,
+  Heart,
+  HeartField,
 } from './Icons';
 import {Image, StyleSheet} from 'react-native';
 
@@ -53,10 +53,10 @@ export default function Screen() {
       <Tab.Screen
         options={{
           tabBarIcon: ({focused}) =>
-            focused ? <ShopField size={30} /> : <Shop size={30} />,
+            focused ? <HeartField size={30} /> : <Heart size={30} />,
         }}
         name="shop"
-        component={ShopScreen}
+        component={LikeScreen}
       />
       <Tab.Screen
         options={{

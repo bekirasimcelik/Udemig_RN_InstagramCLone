@@ -59,24 +59,6 @@ function ReelField({size}) {
   );
 }
 
-function Shop({size}) {
-  return (
-    <Image
-      style={{width: size, height: size}}
-      source={require('./../assets/shop.png')}
-    />
-  );
-}
-
-function ShopField({size}) {
-  return (
-    <Image
-      style={{width: size, height: size}}
-      source={require('./../assets/shop-field.png')}
-    />
-  );
-}
-
 function Profile({size}) {
   return (
     <Image
@@ -102,6 +84,10 @@ function Heart({size}) {
       source={require('./../assets/heart.png')}
     />
   );
+}
+
+function HeartField({size}) {
+  return <Image source={require('./../assets/heartField.png')} />;
 }
 
 function Messenger({size}) {
@@ -185,8 +171,7 @@ export {
   SearchField,
   Reel,
   ReelField,
-  Shop,
-  ShopField,
+  HeartField,
   Profile,
   Plus,
   Heart,
